@@ -1,0 +1,54 @@
+{
+  "name": "fortune-nedb",
+  "description": "NeDB adapter for Fortune.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "email": "0x8890@airmail.cc",
+    "url": "http://0x8890.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fortunejs/fortune-nedb"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "mkdirp dist && babel lib --out-dir dist",
+    "lint": "eslint lib",
+    "prepublish": "npm run clean && npm run build",
+    "test": "npm run lint && npm run build && node test | tap-dot"
+  },
+  "main": "./dist/index.js",
+  "dependencies": {
+    "babel-runtime": "^5.8.20",
+    "nedb": "^1.1.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-eslint": "^4.0.6",
+    "eslint": "^1.1.0",
+    "fortune": "^1.0.0-rc.12",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.2",
+    "tap-dot": "^1.0.0"
+  },
+  "files": [
+    "dist/",
+    "lib/",
+    "LICENSE"
+  ],
+  "babel": {
+    "nonStandard": false,
+    "optional": [
+      "runtime"
+    ]
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "keywords": [
+    "fortune",
+    "nedb",
+    "adapter"
+  ]
+}
