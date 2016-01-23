@@ -18,10 +18,10 @@ $ npm install fortune-nedb
 Then use it with Fortune:
 
 ```js
-import fortune from 'fortune'
-import nedbAdapter from 'fortune-nedb'
+const fortune = require('fortune')
+const nedbAdapter = require('fortune-nedb')
 
-const store = fortune.create({
+const store = fortune({
   adapter: { type: nedbAdapter }
 })
 ```
@@ -29,11 +29,13 @@ const store = fortune.create({
 
 ## Options
 
-All of the options are enumerated [here](https://github.com/louischatriot/nedb). Here are adapter-specific options:
+All of the options are enumerated [here](https://github.com/louischatriot/nedb). Here are additional adapter-specific options:
 
 - `dbPath`: Path to a directory where the database is persisted to disk. Optional.
 
-Note that the `filename` option has no effect.
+Note that the `filename` option has no effect, since Fortune.js determines filenames based on type name.
+
+Another adapter-specific option is the `query` object in the `find` method, this allows for arbitrary queries.
 
 
 ## License

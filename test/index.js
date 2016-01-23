@@ -1,7 +1,6 @@
-/* eslint-disable no-var */
-var path = require('path')
-var testAdapter = require('fortune/test/adapter')
-var adapter = require('../dist')
+const path = require('path')
+const testAdapter = require('fortune/test/adapter')
+const adapter = require('../lib')
 
 testAdapter(adapter, {
   dbPath: path.join(__dirname, '../')
