@@ -35,7 +35,7 @@ All of the options are enumerated [here](https://github.com/louischatriot/nedb).
 
 Note that the `filename` option has no effect, since Fortune.js determines filenames based on type name.
 
-Another adapter-specific option is the `query` object in the `find` method, this allows for arbitrary queries.
+Another adapter-specific option is the `query` function in the `find` method, which accepts the query object as an argument, and may either mutate or return the query object. This allows for arbitrary queries.
 
 
 ## License
