@@ -21,8 +21,8 @@ Then use it with Fortune:
 const fortune = require('fortune')
 const nedbAdapter = require('fortune-nedb')
 
-const store = fortune({
-  adapter: { type: nedbAdapter }
+const store = fortune({ ... }, {
+  adapter: [ nedbAdapter, {/* options */} ]
 })
 ```
 
