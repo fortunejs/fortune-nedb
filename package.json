@@ -3,10 +3,6 @@
   "description": "NeDB adapter for Fortune.",
   "version": "1.1.4",
   "license": "MIT",
-  "author": {
-    "email": "0x8890@airmail.cc",
-    "url": "http://0x8890.com"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/fortunejs/fortune-nedb"
@@ -21,9 +17,9 @@
   },
   "devDependencies": {
     "@tap-format/dot": "^0.2.0",
-    "eslint": "^3.3.1",
+    "eslint": "^3.8.1",
     "eslint-config-boss": "^1.0.4",
-    "fortune": "^4.1.10",
+    "fortune": "^4.2.10",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.4",
     "tapdance": "^4.1.2"
@@ -39,7 +35,7 @@
     }
   },
   "engines": {
-    "node": ">=4.2.0"
+    "node": ">=4.5"
   },
   "keywords": [
     "fortune",
