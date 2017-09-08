@@ -1,7 +1,7 @@
 {
   "name": "fortune-nedb",
   "description": "NeDB adapter for Fortune.",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,12 +17,12 @@
   },
   "devDependencies": {
     "@tap-format/dot": "^0.2.0",
-    "eslint": "^3.15.0",
-    "eslint-config-boss": "^1.0.5",
-    "fortune": "^5.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-boss": "^1.0.6",
+    "fortune": "^5.2.11",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.5.4",
-    "tapdance": "^5.0.3"
+    "rimraf": "^2.6.1",
+    "tapdance": "^5.0.4"
   },
   "files": [
     "lib/",
